@@ -1,4 +1,4 @@
-/*----Selects all elements (using * as wild card0 and removes margin and padding------*/
+/*----Selects all elements (using * as wild card to select all items (global assignment)------*/
 /*--------------------------------Global margin reset--------------------------------*/
 * {
   margin: 0px;
@@ -88,13 +88,14 @@ body {
   margin-right: 20px;
   margin-left: 20px;
 }
-h2,
-h3,
-h4 {
+h2, h3, h4 {
   background-color: orange;
 }
 .sample {
-  border: 20px;
+  float: right;
+  border: green;
   border-color: #c0f011;
   border-width: 10px;
+  border-radius: 15;
+  display: block;
 }

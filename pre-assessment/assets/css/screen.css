@@ -94,7 +94,7 @@ h4 {
   background-color: orange;
 }
 .sample {
-  float: right;
-  display: block;
-  border: #f01111, 250px;
+  border: 20px;
+  border-color: #c0f011;
+  border-width: 10px;
 }

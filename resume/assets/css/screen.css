@@ -56,7 +56,7 @@ img {
 /* ------ Design Time -------*/
 
 .container {
-   /*width: 768px;*/ 
+   /*width: 768px;*/
   padding: 20px;
   margin: 0 auto;
   background-color: var(--main-bg-color);
@@ -191,6 +191,12 @@ main h1:after {
   grid-template-columns: 1fr;
   padding: 20px 20px 0px 20px;
 }
+footer.container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
 
 /*---Base CSS---*/
 
@@ -202,41 +208,96 @@ main h1:after {
 @media screen and (min-width: 768px) {
 
   nav ul {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 20px 20px 20px;
+  gap: 10px;
+  padding: 20px;
   }
   #about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 35vw 1fr;
+    grid-template-areas: 
+        "photo details"
+        "bio bio"
+        "links links";
     gap: 20px;
+    background-color: var(--primary-type-color);
+    padding: 20px;
   }
-  .cf:after {
-  clear: both;
-}
+  .bio {
+    display: contents;
+  }
+  
     .headshot {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      grid-area: photo;
+      width: 35vw;
+      justify-self: center;
+      align-self: center;
     }
     .details {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+     grid-area: details;
+     padding: 0;
+     margin: 0;
+     justify-self: center;
+     align-self: center;
+     
     }
     .about {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
+      grid-area: bio;
+      padding: 20px;
+      margin: 0;
     }
+    .related-links {
+      grid-area: links;
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #experience,
+    #skills,
+    #education {
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
 }
 
 /*----Desktop breakpoint---*/
 @media screen and (min-width: 992px) {
-  .row {
+
+  nav ul {
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: 0;
+  }
+  #about {
+    grid-template-columns: 60vw 1fr;
+  }
+  .headshot {
+    width: 40vw;
+  }
+  .details {
+    font-size: 1.4rem;
+  }
+  .about {
+    font-size: 1.4rem;
+  }
+  .related-links {
+    font-size: 1.4rem;
+  }
+  #skills {
+    font-size: 1.4rem;
+  }
+  #experience {
+    font-size: 1.4rem;
+  }
+  #education {
+    font-size: 1.4rem;
+  }
+  footer.container {
+    font-size: 1.4rem;
   }
 }

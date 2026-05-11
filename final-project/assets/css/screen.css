@@ -127,3 +127,8 @@ header.primary {
   background-size: cover;
   height: 300px;
 }
+
+
+footer.primary {
+  text-align: center;
+}

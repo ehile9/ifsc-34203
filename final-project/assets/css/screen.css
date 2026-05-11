@@ -6,6 +6,7 @@
   /*------text---------*/
   --text: #e0e7ff;
   --secondary: #334155;
+  --secondary-rgb: 51, 65, 85;
   /*-------accent------*/
   --accent-color-1: #22c55e;
   --accent-color-2: rgb(206, 246, 206);
@@ -29,18 +30,7 @@ html {
 }
 
 /* ------ Helper Classes -------*/
-/*-------Hides the personal info from schema----*/
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; /* 1 */
-}
+
 
 /* ------ Typography -------*/
 body {
@@ -73,6 +63,13 @@ body {
 .primary {
   background-color: var(--primary-type-color);
 }
+.hero-img {
+  width: 98px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 nav {
   padding: 1px;
 }
@@ -94,12 +91,12 @@ nav a:link {
   color: var(--accent-color-1);
   text-transform: uppercase;
   font-size: 0.75em;
-  background: var(--secondary);
+  background: rgba(var(--secondary-rgb), .25);
   transition: background-color 0.5s ease;
   /*color: #ffffff;*/
 }
 nav a:visited {
-   display: block;
+  display: block;
   padding: 8px 16px;
   border: 1px solid var(--border);
   text-align: center;
@@ -107,12 +104,13 @@ nav a:visited {
   color: var(--accent-color-2);
   text-transform: uppercase;
   font-size: 0.75em;
-  background: var(--secondary);
+  background: rgba(var(--secondary-rgb), .25);
   transition: background-color 0.5s ease;
 }
 
 nav a:hover {
-  background-color: var(--accent-color-1);
+  background-image: url(../img/italian-flag-link.jpg);
+ 
 }
 
 a:link {
@@ -127,5 +125,5 @@ header.primary {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 240px;
+  height: 300px;
 }

@@ -9,14 +9,20 @@
     <meta name="author" content="Eric Hile" />
   </head>
 <body>
-    <main>
+    <main class="container">
         <header class="primary">
-          <img src="assets/img/hero-image-mobile.webp"
-    srcset="assets/img/hero-image-mobile.webp 390w,
-            assets/img/hero-image-table.webp 768w,
-            assets/img/hero-image-desktop.webp 992w
+          <img class="hero-img"
+          src="assets/img/hero-image-mobile.webp"
+            srcset="assets/img/hero-image-mobile.webp 98w,
+            assets/img/hero-image-tablet.webp 192w,
+            assets/img/hero-image-desktop.webp 248w
             "
-            alt="statue in museum">
+            sizes="
+            (min-width: 992px) 248px,
+            (min-width: 768px) 192px,
+            98px
+            "
+            alt="hero image">
           
             <nav class="primary">
               <ul>

@@ -1,0 +1,131 @@
+/*CSS custom Properties */
+:root {
+  /*-----background-----*/
+  --main-bg-color: #1f2937;
+  --primary-type-color: #273445;
+  /*------text---------*/
+  --text: #e0e7ff;
+  --secondary: #334155;
+  /*-------accent------*/
+  --accent-color-1: #22c55e;
+  --accent-color-2: rgb(206, 246, 206);
+  /*------border-------*/
+  --border: #475569;
+
+  /* --main-bg-color: #efefef;
+  --primary-type-color: #222222;
+  --accent-color-1: #999999;
+  */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------ Helper Classes -------*/
+/*-------Hides the personal info from schema----*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/* ------ Typography -------*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------ Fluid Images -------*/
+
+img {
+  max-width: 100%;
+}
+
+/* ------ Design Time -------*/
+
+.container {
+  width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+}
+
+/* ------ Global Styles -------*/
+body {
+  /*background: var(--main-bg-color); */
+
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.primary {
+  background-color: var(--primary-type-color);
+}
+nav {
+  padding: 1px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 20px 0px 20px;
+}
+nav li {
+  list-style-type: none;
+}
+
+nav a:link {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent-color-1);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--secondary);
+  transition: background-color 0.5s ease;
+  /*color: #ffffff;*/
+}
+nav a:visited {
+   display: block;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent-color-2);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background: var(--secondary);
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-color-1);
+}
+
+a:link {
+  color: var(--accent-color-1);
+}
+a:visited {
+  color: var(--accent-color-2);
+}
+
+header.primary {
+  background-image: url(../img/italian-flag-390px.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+}

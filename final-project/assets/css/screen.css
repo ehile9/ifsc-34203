@@ -128,7 +128,24 @@ header.primary {
   background-size: cover;
   height: 300px;
 }
-
+#Rome img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+#Florence img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+#Planning img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
 
 footer.primary {
   text-align: center;

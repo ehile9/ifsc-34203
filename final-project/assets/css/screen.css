@@ -137,22 +137,22 @@ footer.primary {
 /*------Tablet breakpoint-----*/
 @media screen and (min-width: 768px) {
 
-header.primary {
+ header.primary {
     background-image: url(../img/italian-flag-768px.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 340px;
     padding: 10px;
-}
+ }
 
-.hero-img {
+ .hero-img {
   width: 192px;
   height: auto;
   display: block;
   margin: 0;
   border-radius: 40px;
-}
+ }
 
 
   nav ul {
@@ -235,9 +235,11 @@ header.primary {
     grid-row-start: 4;
     margin: 0;
   }
-  }
+  
 }
 
 
 /*----Desktop breakpoint---*/
-@media screen and (min-width: 992px) 
+@media screen and (min-width: 992px) {
+  
+}
